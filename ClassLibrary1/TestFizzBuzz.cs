@@ -28,16 +28,6 @@ namespace ClassLibrary1
         }
 
         [Test]
-        public void Should_print_Fizz_given_3_as_a_number()
-        {
-            var expected = "Fizz";
-
-            var result = _fizzBuzz.From(3);
-            
-            Assert.AreEqual(expected, result);
-        }
-
-        [Test]
         public void Should_print_Buzz_given_5_as_a_number()
         {
             var expected = "Buzz";
