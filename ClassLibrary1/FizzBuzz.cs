@@ -1,4 +1,8 @@
-﻿namespace ClassLibrary1
+﻿using System;
+using System.Collections.Generic;
+using NUnit.Framework;
+
+namespace ClassLibrary1
 {
     public class FizzBuzz
     {
@@ -8,19 +12,30 @@
 
         public string From(int i)
         {
-            if (i == 3)
-            {
-                return FIZZ;
-            }
-            if (i == 5)
-            {
-                return BUZZ;
-            }
-            if (i == 15)
+            if (i % 15 == 0)
             {
                 return FIZZBUZZ;
             }
+            if (i % 3 == 0)
+            {
+                return FIZZ;
+            }
+            if (i % 5 == 0)
+            {
+                return BUZZ;
+            }
+            
             return i.ToString();
+        }
+
+        public List<string> Print1To100()
+        {
+            var printedNumbers = new List<string>();
+            for (int i = 0; i < 100; i++)
+            {
+                printedNumbers.Add(i.ToString());
+            }
+            return printedNumbers;
         }
     }
 }
