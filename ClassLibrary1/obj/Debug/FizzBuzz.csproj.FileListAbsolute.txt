@@ -5,3 +5,10 @@ c:\users\saileshr\documents\visual studio 2013\Projects\FizzBuzz\ClassLibrary1\b
 c:\users\saileshr\documents\visual studio 2013\Projects\FizzBuzz\ClassLibrary1\obj\Debug\FizzBuzz.csprojResolveAssemblyReference.cache
 c:\users\saileshr\documents\visual studio 2013\Projects\FizzBuzz\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 c:\users\saileshr\documents\visual studio 2013\Projects\FizzBuzz\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Coaching\Sources\FizzBuzz\ClassLibrary1\obj\Debug\FizzBuzz.csprojResolveAssemblyReference.cache
+C:\Coaching\Sources\FizzBuzz\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Coaching\Sources\FizzBuzz\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Coaching\Sources\FizzBuzz\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Coaching\Sources\FizzBuzz\ClassLibrary1\bin\Debug\nunit.framework.dll
+C:\Coaching\Sources\FizzBuzz\ClassLibrary1\bin\Debug\nunit.framework.xml
+C:\Coaching\Sources\FizzBuzz\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

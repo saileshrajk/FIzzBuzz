@@ -10,13 +10,20 @@ namespace ClassLibrary1
     [TestFixture]
     public class TestFizzBuzz
     {
+        private FizzBuzz _fizzBuzz;
+
+        [SetUp]
+        public void Setup()
+        {
+            _fizzBuzz = new FizzBuzz();    
+        }
+
         [Test]
         public void Should_print_1__as_a_string_given_1_as_a_number()
         {
             var expected = "1";
-            var fizzBuzz = new FizzBuzz();
-
-            var result = fizzBuzz.From(1);
+            
+            var result = _fizzBuzz.From(1);
 
             Assert.AreEqual(expected,result);
         }
