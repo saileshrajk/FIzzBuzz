@@ -31,9 +31,9 @@ namespace ClassLibrary1
         public List<string> Print1To100()
         {
             var printedNumbers = new List<string>();
-            for (int i = 0; i < 100; i++)
+            for (int i = 1; i <= 100; i++)
             {
-                printedNumbers.Add(i.ToString());
+                printedNumbers.Add(From(i));
             }
             return printedNumbers;
         }

@@ -40,7 +40,15 @@ namespace ClassLibrary1
             Assert.AreEqual(expectedListCount, printedNumbers.Count);
         }        
         
-
-
+        [Test]
+        public void Should_have_fizz_in_position_3_of_the_produced_number_list()
+        {
+            var FIZZ ="Fizz";
+            
+            var printedNumbers = _fizzBuzz.Print1To100();
+            var thirdPositionOfResultList = printedNumbers[2];
+            
+            Assert.AreEqual(FIZZ, thirdPositionOfResultList);
+        }
     }
 }
