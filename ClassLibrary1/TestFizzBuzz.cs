@@ -19,6 +19,7 @@ namespace ClassLibrary1
         }
 
         [TestCase(1, "1")]
+        [TestCase(3, "Fizz")]
         public void Should_print_fizz_or_buzz_or_number_as_a_string_given_a_number(int inputNumber, string expected)
         {
             var result = _fizzBuzz.From(inputNumber);
