@@ -15,7 +15,7 @@ namespace ClassLibrary1
         [SetUp]
         public void Setup()
         {
-            _fizzBuzz = new FizzBuzz();    
+            _fizzBuzz = new FizzBuzz();
         }
 
         [TestCase(1, "1")]
@@ -27,7 +27,7 @@ namespace ClassLibrary1
         {
             var result = _fizzBuzz.From(inputNumber);
 
-            Assert.AreEqual(expected,result);
+            Assert.AreEqual(expected, result);
         }
 
         [Test]
@@ -36,19 +36,24 @@ namespace ClassLibrary1
             var expectedListCount = 100;
 
             var printedNumbers = _fizzBuzz.Print1To100();
-            
+
             Assert.AreEqual(expectedListCount, printedNumbers.Count);
-        }        
-        
-        [TestCase("Fizz", 3)]
-        public void Should_return_list_with_specified_value_in_specified_index(string expectedValue, int index)
-        {
-            var printedNumbers = _fizzBuzz.Print1To100();
-            var positionOfResultList = printedNumbers[index -1];
-            
-            Assert.AreEqual(expectedValue, positionOfResultList);
         }
 
-        
+        [TestCase(new[] { "73", "74", "4", "Fizz", "Buzz", "FizzBuzz" }, new int[] { 73, 74, 4, 3, 5, 15 })]
+        [TestCase(new[] { "Fizz", "Buzz", "FizzBuzz" }, new int[] { 12, 50, 60 })]
+        public void Should_return_list_with_specified_value_in_specified_index(string[] expectedValues, int[] index)
+        {
+            var actualValues = new List<string>();
+            var printedNumbers = _fizzBuzz.Print1To100();
+            foreach (var i in index)
+            {
+                actualValues.Add(printedNumbers[i - 1]);
+            }
+
+            Assert.AreEqual(expectedValues, actualValues);
+        }
+
+
     }
 }
