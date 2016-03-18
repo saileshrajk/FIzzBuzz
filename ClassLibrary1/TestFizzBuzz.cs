@@ -32,9 +32,8 @@ namespace ClassLibrary1
         public void Should_print_Fizz_given_3_as_a_number()
         {
             var expected = "Fizz";
-            var fizzBuzz = new FizzBuzz();
 
-            var result = fizzBuzz.From(3);
+            var result = _fizzBuzz.From(3);
             
             Assert.AreEqual(expected, result);
         }
@@ -43,9 +42,8 @@ namespace ClassLibrary1
         public void Should_print_Buzz_given_5_as_a_number()
         {
             var expected = "Buzz";
-            var fizzBuzz = new FizzBuzz();
 
-            var result = fizzBuzz.From(5);
+            var result = _fizzBuzz.From(5);
 
             Assert.AreEqual(expected, result);
         }
