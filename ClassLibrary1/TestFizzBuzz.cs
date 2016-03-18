@@ -40,8 +40,8 @@ namespace ClassLibrary1
             Assert.AreEqual(expectedListCount, printedNumbers.Count);
         }
 
-        [TestCase(new[] { "73", "74", "4", "Fizz", "Buzz", "FizzBuzz" }, new int[] { 73, 74, 4, 3, 5, 15 })]
-        [TestCase(new[] { "Fizz", "Buzz", "FizzBuzz" }, new int[] { 12, 50, 60 })]
+        [TestCase(new[] { "73", "74", "4", "Fizz", "Buzz", "FizzBuzz" }, new[] { 73, 74, 4, 3, 5, 15 })]
+        [TestCase(new[] { "Fizz", "Buzz", "FizzBuzz" }, new[] { 12, 50, 60 })]
         public void Should_return_list_with_specified_value_in_specified_index(string[] expectedValues, int[] index)
         {
             var actualValues = new List<string>();
