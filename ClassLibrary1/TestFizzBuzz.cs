@@ -18,12 +18,10 @@ namespace ClassLibrary1
             _fizzBuzz = new FizzBuzz();    
         }
 
-        [Test]
-        public void Should_print_1__as_a_string_given_1_as_a_number()
+        [TestCase(1, "1")]
+        public void Should_print_fizz_or_buzz_or_number_as_a_string_given_a_number(int inputNumber, string expected)
         {
-            var expected = "1";
-            
-            var result = _fizzBuzz.From(1);
+            var result = _fizzBuzz.From(inputNumber);
 
             Assert.AreEqual(expected,result);
         }
